@@ -5,23 +5,23 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{348C6FDA-6ED0-4260-B0D3-03660230B9DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager.UI", "app\InvoiceManager.UI\InvoiceManager.UI.csproj", "{4F9E8A78-FF17-4B9B-975F-7F2510FC5500}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager.UI", "src\InvoiceManager.UI\InvoiceManager.UI.csproj", "{4F9E8A78-FF17-4B9B-975F-7F2510FC5500}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{8CD55345-D658-4BF9-AB19-6A5B8588BC33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager.Domain", "app\InvoiceManager.Domain\InvoiceManager.Domain.csproj", "{50B7BF4C-2C79-4D3F-9FE7-C38812E2CB78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager.Domain", "src\InvoiceManager.Domain\InvoiceManager.Domain.csproj", "{50B7BF4C-2C79-4D3F-9FE7-C38812E2CB78}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{98E83D3E-4E3E-424E-9823-F7E0373C0F91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager.Application", "app\InvoiceManager.Application\InvoiceManager.Application.csproj", "{C64CF1D5-36C5-4B00-BA91-48287D2AAD08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager.Application", "src\InvoiceManager.Application\InvoiceManager.Application.csproj", "{C64CF1D5-36C5-4B00-BA91-48287D2AAD08}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager.Application.Test", "tests\InvoiceManager.Application.Test\InvoiceManager.Application.Test.csproj", "{08EDAF28-6B63-4DD4-9DEF-50EAD815851F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{F160EBA7-C751-4703-87F2-64495E34D88B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager.Infra.Data", "app\InvoiceManager.Infra.Data\InvoiceManager.Infra.Data.csproj", "{EB6072E3-6F8A-4A09-9A95-CC2B54FFC96B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager.Infra.Data", "src\InvoiceManager.Infra.Data\InvoiceManager.Infra.Data.csproj", "{EB6072E3-6F8A-4A09-9A95-CC2B54FFC96B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager.Infra.CrossCutting.IoC", "app\InvoiceManager.Infra.CrossCutting.IoC\InvoiceManager.Infra.CrossCutting.IoC.csproj", "{CDD5892F-D63E-46D5-9637-52714D68007E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager.Infra.CrossCutting.IoC", "src\InvoiceManager.Infra.CrossCutting.IoC\InvoiceManager.Infra.CrossCutting.IoC.csproj", "{CDD5892F-D63E-46D5-9637-52714D68007E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

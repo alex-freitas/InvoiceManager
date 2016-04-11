@@ -63,11 +63,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\app\InvoiceManager.Application\InvoiceManager.Application.csproj">
+    <ProjectReference Include="..\..\src\InvoiceManager.Application\InvoiceManager.Application.csproj">
       <Project>{c64cf1d5-36c5-4b00-ba91-48287d2aad08}</Project>
       <Name>InvoiceManager.Application</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\app\InvoiceManager.Domain\InvoiceManager.Domain.csproj">
+    <ProjectReference Include="..\..\src\InvoiceManager.Domain\InvoiceManager.Domain.csproj">
       <Project>{50b7bf4c-2c79-4d3f-9fe7-c38812e2cb78}</Project>
       <Name>InvoiceManager.Domain</Name>
     </ProjectReference>
