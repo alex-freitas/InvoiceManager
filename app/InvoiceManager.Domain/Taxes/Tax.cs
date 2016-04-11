@@ -1,10 +1,5 @@
 ﻿using InvoiceManager.Domain.Interfaces;
 using InvoiceManager.Domain.VO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InvoiceManager.Domain.Taxes
 {

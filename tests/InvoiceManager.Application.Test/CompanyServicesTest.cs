@@ -1,7 +1,7 @@
-﻿using System;
+﻿using InvoiceManager.Domain.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using InvoiceManager.Domain.Repository;
+using System;
 
 namespace InvoiceManager.Application.Test
 {

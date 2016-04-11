@@ -1,12 +1,7 @@
-﻿using InvoiceManager.Domain.Interfaces;
-using InvoiceManager.Domain.VO;
+﻿using InvoiceManager.Domain.VO;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InvoiceManager.Domain.Taxes
 {
@@ -20,7 +15,7 @@ namespace InvoiceManager.Domain.Taxes
 
         public override WithheldTax Withhold(Invoice invoice)
         {
-            var minimumValue = Convert.ToDouble(ConfigurationManager.AppSettings["MinimumValueForPIS"], CultureInfo.InvariantCulture);
+            var minimumValue = Convert.ToDouble(ConfigurationManager.AppSettings["MinimumValueForCOFINS"], CultureInfo.InvariantCulture);
             var amount = 0.0;
 
             if (invoice.Amount > minimumValue)
