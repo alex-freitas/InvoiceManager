@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -43,11 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\InvoiceManager.Domain\InvoiceManager.Domain.csproj">
-      <Project>{50b7bf4c-2c79-4d3f-9fe7-c38812e2cb78}</Project>
+      <Project>{50B7BF4C-2C79-4D3F-9FE7-C38812E2CB78}</Project>
       <Name>InvoiceManager.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\InvoiceManager.Infra.Data\InvoiceManager.Infra.Data.csproj">
-      <Project>{eb6072e3-6f8a-4a09-9a95-cc2b54ffc96b}</Project>
+      <Project>{EB6072E3-6F8A-4A09-9A95-CC2B54FFC96B}</Project>
       <Name>InvoiceManager.Infra.Data</Name>
     </ProjectReference>
   </ItemGroup>

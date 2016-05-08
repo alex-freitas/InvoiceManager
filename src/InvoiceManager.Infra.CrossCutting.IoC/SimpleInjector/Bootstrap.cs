@@ -1,10 +1,9 @@
 ﻿using System;
-using SimpleInjector;
-using InvoiceManager.Application.Interfaces;
 using InvoiceManager.Application;
+using InvoiceManager.Application.Interfaces;
 using InvoiceManager.Domain.Repository;
 using InvoiceManager.Infra.Data.Repository;
-
+using SimpleInjector;
 
 namespace InvoiceManager.Infra.CrossCutting.IoC.SimpleInjector
 {

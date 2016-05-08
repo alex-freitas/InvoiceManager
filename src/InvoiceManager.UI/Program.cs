@@ -1,8 +1,8 @@
-﻿using InvoiceManager.Application.Interfaces;
+﻿using System;
+using InvoiceManager.Application.Interfaces;
 using InvoiceManager.Infra.CrossCutting.IoC.Ninject;
-using Ninject;
-using System;
 using InvoiceManager.Infra.CrossCutting.IoC.SimpleInjector;
+using Ninject;
 
 namespace InvoiceManager.UI
 {
