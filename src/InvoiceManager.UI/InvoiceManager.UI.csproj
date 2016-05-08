@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -32,11 +32,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7">
+      <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector">
+      <HintPath>..\..\packages\SimpleInjector.3.1.4\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -48,19 +50,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\InvoiceManager.Application\InvoiceManager.Application.csproj">
-      <Project>{c64cf1d5-36c5-4b00-ba91-48287d2aad08}</Project>
+      <Project>{C64CF1D5-36C5-4B00-BA91-48287D2AAD08}</Project>
       <Name>InvoiceManager.Application</Name>
     </ProjectReference>
     <ProjectReference Include="..\InvoiceManager.Domain\InvoiceManager.Domain.csproj">
-      <Project>{50b7bf4c-2c79-4d3f-9fe7-c38812e2cb78}</Project>
+      <Project>{50B7BF4C-2C79-4D3F-9FE7-C38812E2CB78}</Project>
       <Name>InvoiceManager.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\InvoiceManager.Infra.CrossCutting.IoC\InvoiceManager.Infra.CrossCutting.IoC.csproj">
-      <Project>{cdd5892f-d63e-46d5-9637-52714d68007e}</Project>
+      <Project>{CDD5892F-D63E-46D5-9637-52714D68007E}</Project>
       <Name>InvoiceManager.Infra.CrossCutting.IoC</Name>
     </ProjectReference>
     <ProjectReference Include="..\InvoiceManager.Infra.Data\InvoiceManager.Infra.Data.csproj">
-      <Project>{eb6072e3-6f8a-4a09-9a95-cc2b54ffc96b}</Project>
+      <Project>{EB6072E3-6F8A-4A09-9A95-CC2B54FFC96B}</Project>
       <Name>InvoiceManager.Infra.Data</Name>
     </ProjectReference>
   </ItemGroup>

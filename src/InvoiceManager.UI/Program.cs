@@ -2,6 +2,7 @@
 using InvoiceManager.Infra.CrossCutting.IoC.Ninject;
 using Ninject;
 using System;
+using InvoiceManager.Infra.CrossCutting.IoC.SimpleInjector;
 
 namespace InvoiceManager.UI
 {
@@ -11,6 +12,8 @@ namespace InvoiceManager.UI
 
         static void Main(string[] args)
         {
+			Bootstrap.Start();
+
             CreateInvoices();
 
             Console.ReadKey();
@@ -18,7 +21,8 @@ namespace InvoiceManager.UI
 
         private static void CreateInvoices()
         {
-            var invoiceServices = _kernel.Get<IInvoiceServices>();
+            //var invoiceServices = _kernel.Get<IInvoiceServices>();
+			var invoiceServices = Bootstrap.container.GetInstance<IInvoiceServices>();
 
             var invoice = invoiceServices.CreateInvoice(1, 1, 5001);
             LogInvoice(invoice);
