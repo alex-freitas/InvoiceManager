@@ -1,10 +1,10 @@
-﻿using InvoiceManager.Application.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using InvoiceManager.Application.Interfaces;
 using InvoiceManager.Domain;
 using InvoiceManager.Domain.Interfaces;
 using InvoiceManager.Domain.Repository;
 using InvoiceManager.Domain.Taxes;
-using System;
-using System.Collections.Generic;
 
 namespace InvoiceManager.Application
 {
@@ -44,9 +44,9 @@ namespace InvoiceManager.Application
 
             var invoice = new Invoice(customer, company, amount, taxes);
 
+			_invoiceRepository.Save (invoice);
+
             return invoice;
         }
-
-
     }
 }
